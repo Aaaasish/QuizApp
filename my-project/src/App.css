@@ -1,0 +1,109 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffd6d6, #ffe3b3);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 650px;
+  margin: 60px auto;
+  background: linear-gradient(to bottom right, #fff5eb, #fffaf0);
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #d84315;
+  font-size: 2.5rem;
+}
+
+h2.question {
+  color: #bf360c;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  background: #ffecb3;
+  padding: 14px 22px;
+  margin: 12px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  border: 1.5px solid transparent;
+}
+
+li:hover {
+  background: #ffd180;
+  transform: translateY(-1px);
+}
+
+li.selected {
+  background: linear-gradient(to right, #26c6da, #00acc1);
+  color: white;
+  font-weight: bold;
+  border: 2px solid #00838f;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(to right, #f06292, #f48fb1);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 98, 146, 0.4);
+}
+
+.scoreText {
+  font-size: 22px;
+  margin-top: 1.5rem;
+  color: #444;
+}
+
+.congratsText {
+  color: #009688;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.index {
+  margin-top: 15px;
+  color: #666;
+  font-size: 15px;
+  font-style: italic;
+}
